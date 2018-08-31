@@ -500,7 +500,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/app
-      - run:  &bundler_init
+      - run: *bundler_init
       - *step_run_all_tests
 
   deploy-release:
