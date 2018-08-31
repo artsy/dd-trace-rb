@@ -543,11 +543,11 @@ task :ci do
       sh 'bundle exec appraisal rails5-postgres-sidekiq rake test:railsactivejob'
       sh 'bundle exec appraisal rails5-postgres rake test:railsdisableenv'
       # Rails specs
-      sh 'bundle exec appraisal rails30-postgres rake spec:rails'
-      sh 'bundle exec appraisal rails32-mysql2 rake spec:rails'
-      sh 'bundle exec appraisal rails32-postgres rake spec:rails'
-      sh 'bundle exec appraisal rails4-mysql2 rake spec:rails'
-      sh 'bundle exec appraisal rails4-postgres rake spec:rails'
+      # sh 'bundle exec appraisal rails30-postgres rake spec:rails'
+      # sh 'bundle exec appraisal rails32-mysql2 rake spec:rails'
+      # sh 'bundle exec appraisal rails32-postgres rake spec:rails'
+      # sh 'bundle exec appraisal rails4-mysql2 rake spec:rails'
+      # sh 'bundle exec appraisal rails4-postgres rake spec:rails'
       sh 'bundle exec appraisal rails5-mysql2 rake spec:rails'
       sh 'bundle exec appraisal rails5-postgres rake spec:rails'
     end
