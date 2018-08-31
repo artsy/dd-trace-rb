@@ -502,7 +502,7 @@ task :ci do
       sh 'bundle exec appraisal contrib rake test:sinatra'
       sh 'bundle exec appraisal contrib rake test:sucker_punch'
       sh 'bundle exec appraisal contrib rake test:sidekiq'
-      sh 'bundle exec rake benchmark'      
+      sh 'bundle exec rake benchmark'
       # Contrib specs
       sh 'bundle exec appraisal contrib rake spec:active_model_serializers'
       sh 'bundle exec appraisal contrib rake spec:active_record'
