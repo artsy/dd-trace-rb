@@ -226,7 +226,7 @@ ruby_version('2.1.0') do
 end
 
 ruby_version('2.2.0') do
-  appr 'rails30-postgres', rails_30_postgres
+  appr 'rails30-postgres'
   appr 'rails30-postgres-sidekiq'
   appr 'rails32-mysql2'
   appr 'rails32-postgres'
@@ -262,9 +262,37 @@ ruby_version('2.3.0') do
 end
 
 ruby_version('2.4.0') do
-  appraise 'contrib'
+  appr 'rails30-postgres'
+  appr 'rails30-postgres-sidekiq'
+  appr 'rails32-mysql2'
+  appr 'rails32-postgres'
+  appr 'rails32-postgres-redis'
+  appr 'rails32-postgres-sidekiq'
+  appr 'rails4-mysql2'
+  appr 'rails4-postgres'
+  appr 'rails4-postgres-redis'
+  appr 'rails4-postgres-sidekiq'
+  appr 'rails5-mysql2'
+  appr 'rails5-postgres'
+  appr 'rails5-postgres-redis'
+  appr 'rails5-postgres-sidekiq'
+  appr 'contrib'
 end
 
 ruby_version('2.5.0') do
-  appraise 'contrib'
+  appr 'rails30-postgres'
+  appr 'rails30-postgres-sidekiq'
+  appr 'rails32-mysql2'
+  appr 'rails32-postgres'
+  appr 'rails32-postgres-redis'
+  appr 'rails32-postgres-sidekiq'
+  appr 'rails4-mysql2'
+  appr 'rails4-postgres'
+  appr 'rails4-postgres-redis'
+  appr 'rails4-postgres-sidekiq'
+  appr 'rails5-mysql2'
+  appr 'rails5-postgres'
+  appr 'rails5-postgres-redis'
+  appr 'rails5-postgres-sidekiq'
+  appr 'contrib'
 end
