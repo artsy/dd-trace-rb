@@ -478,7 +478,7 @@ jobs:
       - *step_rubocop
       - *step_appraisal_install
       - save_cache: *cache-2_5
-      - persist_at_workspace:
+      - persist_to_workspace:
           <<: *cache-2_5
           root: '.'
   test-2.5:
