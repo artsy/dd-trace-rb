@@ -476,9 +476,9 @@ jobs:
           name: Initializing Bundler vendor path
           command: bundle --path vendor/bundle      
       - *step_bundle_install
-      - *step_rubocop
       - *step_appraisal_install
       - save_cache: *cache-2_5
+      - *step_rubocop
       - persist_to_workspace:
           <<: *cache-2_5
           root: '.'
