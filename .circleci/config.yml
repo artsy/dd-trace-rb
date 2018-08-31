@@ -483,6 +483,7 @@ jobs:
           root: '.'
   test-2.5:
     <<: *job_defaults
+    working_directory: ~/app
     docker:
       - <<: *container-2_5
         environment:
