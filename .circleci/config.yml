@@ -465,6 +465,7 @@ jobs:
       - &container-2_5
           image: circleci/ruby:2.5.1
     steps:
+      - checkout
       - restore_cache: &cache-2_5
           key: 'b1-{{ .Environment.CIRCLE_CACHE_VERSION }}-cache-2.5'
           paths:
